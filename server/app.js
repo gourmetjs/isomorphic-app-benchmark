@@ -1,6 +1,7 @@
 "use strict";
 
 var npath = require("path");
+var fs = require("fs");
 var express = require("express");
 var logger = require("morgan");
 var ReactDOMServer = require("react-dom/server");
@@ -33,6 +34,13 @@ app.get("/isomorphic", function(req, res) {
       title: "Isomorphic rendering",
       contentElements: ReactDOMServer.renderToString(component)
     });
+  });
+});
+
+app.get("/data", function(req, res) {
+  fs.readFile("data.json", "utf8", function(err, data) {
+    data = JSON.parse(data);
+    res.json(data);
   });
 });
 
