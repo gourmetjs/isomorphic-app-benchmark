@@ -34,7 +34,7 @@ module.exports = function(options) {
   app.get("/isomorphic", function(req, res, next) {
     renderRoot({
       loadData: function() {
-        return fetch("http://localhost:3000/data").then(function(res) {
+        return fetch(options.apiUrl + "/data").then(function(res) {
           return res.json();
         }).catch(function(err) {
           next(err);
