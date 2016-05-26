@@ -1,0 +1,26 @@
+{
+  "name": "isomorphic-app-benchmark",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node server/index.js",
+    "build": "babel src -d _build/server && webpack --colors",
+    "watch": "nodemon watch.js"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.9.0",
+    "ejs": "^2.4.2",
+    "express": "^4.13.4",
+    "morgan": "^1.7.0",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "nodemon": "^1.9.2",
+    "webpack": "^1.13.1"
+  }
+}
