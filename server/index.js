@@ -2,7 +2,9 @@
 
 var npath = require("path");
 var http = require("http");
-var app = require("./app");
+var initApp = require("./app");
+
+var port = process.env.NODE_ENV === "production" ? 80 : 3000;
 
 // Event listener for HTTP server "error" event.
 function _onError(err) {
@@ -30,8 +32,12 @@ function _onListening() {
   console.log("Listening on " + bind);
 }
 
+var app = initApp({
+  apiUrl: "http://localhost:" + port
+});
+
 var server = http.createServer(app);
 
-server.listen(3000);
+server.listen(port);
 server.on("error", _onError);
 server.on("listening", _onListening);

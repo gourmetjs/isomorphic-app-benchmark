@@ -2,7 +2,7 @@
   "name": "isomorphic-app-benchmark",
   "version": "1.0.0",
   "scripts": {
-    "start": "node server/index.js",
+    "start": "NODE_ENV=production node server/index.js",
     "build": "babel src -d _build/server && webpack --colors",
     "watch": "nodemon watch.js"
   },
