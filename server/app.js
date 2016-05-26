@@ -15,9 +15,12 @@ module.exports = function(options) {
   app.set("views", npath.join(__dirname, "templates"));
   app.set("view engine", "ejs");
 
+  if (!options.enableCache)
+    app.disable("etag");
+
   app.use(logger("dev"));
-  app.use("/static/scripts", express.static(npath.join(__dirname, "../_build/client")));
-  app.use("/static", express.static(npath.join(__dirname, "../static")));
+  app.use("/static/scripts", express.static(npath.join(__dirname, "../_build/client"), {etag: options.enableCache}));
+  app.use("/static", express.static(npath.join(__dirname, "../static"), {etag: options.enableCache}));
 
   app.get("/", function(req, res) {
     res.render("index");

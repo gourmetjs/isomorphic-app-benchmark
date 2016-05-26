@@ -33,7 +33,8 @@ function _onListening() {
 }
 
 var app = initApp({
-  apiUrl: "http://localhost:" + port
+  apiUrl: "http://localhost:" + port,
+  enableCache: false
 });
 
 var server = http.createServer(app);
