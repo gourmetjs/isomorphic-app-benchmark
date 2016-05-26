@@ -1,3 +1,19 @@
 .container-wrapper {
   padding: 3em;
 }
+
+.app-loading {
+  background: #eee;
+  color: #bbb;
+  padding: 150px 0;
+  text-align: center;
+}
+
+.wine-detail {
+  margin: 3em 0;
+}
+
+.wine-photo {
+  max-height: 180px;
+  margin-left: 2em;
+}

@@ -2,13 +2,24 @@
 <html>
 <head>
   <title><%= title %></title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" href="/static/styles/app.css">
+  <script>
+  window.__initialData__ = <%- data %>;
+  </script>
 </head>
 <body>
   <div class="container">
     <div class="container-wrapper">
-      <div id="content_container"><%- contentElements %></div>
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h1 class="panel-title"><%= title %></h1>
+        </div>
+        <div class="panel-body">
+          <div id="content_container"><%- contentElements %></div>
+        </div>
+      </div>
     </div>
   </div>
   <script src="/static/scripts/bundle.js"></script>

@@ -1,5 +1,6 @@
-{
-  "137467": {
+[
+  {
+    "id": "137467",
     "name": "Stag's Leap Wine Cellars Artemis Cabernet Sauvignon 2012",
     "varietal": "Cabernet Sauvignon",
     "photo": "/static/images/137467.jpg",
@@ -9,8 +10,8 @@
       "RP": 90
     },
     "note": "This Artemis Cabernet Sauvignon offers inviting aromas of black cherry and plum with hints of vanilla. On the palate, the wine has a soft entry with ripe mixed berry and plum flavors. The wine has a medium-bodied mouthfeel with round, satin-like tannins.\nEnjoy this wine with grilled tri-tip, braised short ribs, or pasta with wild mushrooms and prosciutto.\nBlend: 89% Cabernet Sauvignon, 9% Merlot, 2% Malbec"
-  },
-  "130265": {
+  }, {
+    "id": "130265",
     "name": "Oberon Cabernet Sauvignon 2012",
     "varietal": "Cabernet Sauvignon",
     "photo": "/static/images/130265.jpg",
@@ -19,8 +20,8 @@
       "WE": 90
     },
     "note": "Classic Napa Valley with deep, rich color and concentrated black fruit character. Lush, dark berry and cassis flavors complemented by 12 months of French oak barrel aging and a supple tannin structure.\nPair with steak, lamb and duck dishes, as well as flavorful cheeses."
-  },
-  "129729": {
+  }, {
+    "id": "129729",
     "name": "Avalon California Cabernet Sauvignon 2012",
     "varietal": "Cabernet Sauvignon",
     "photo": "/static/images/129729.jpg",
@@ -29,8 +30,8 @@
       "WE": 88
     },
     "note": "The Avalon California Cabernet shows bright vibrant aromas of blueberry jam, strawberry tart, and boysenberries with hints of vanilla and toasted oak. A dash of Zinfandel give this wine a hint of spice that is followed by rich black cherries, red raspberries, and juicy ripe plums on the long smooth finish.\nPair with grilled prime sirloin burgers with sharp cheddar cheese, brick oven baked Margherita pizza, smoked or rotisserie chicken."
-  },
-  "135441": {
+  }, {
+    "id": "135441",
     "name": "Joseph Phelps Cabernet Sauvignon 2012",
     "varietal": "Cabernet Sauvignon",
     "photo": "/static/images/135441.jpg",
@@ -39,8 +40,8 @@
       "ST": 91
     },
     "note": "The 2012 vintage marks the fortieth Napa Valley Cabernet Sauvignon release from Joseph Phelps Vineyards. This latest bottling highlights beautiful aromatics of dark fruit, cigar box, dried herbs, graphite notes and pain grille. Expressive Bing cherry, licorice, blueberry and blackberry layer this silky smooth wine of great depth and personality. Richly nuanced with supple tannins and a lingering velvety finish.\nBlend: 91% Cabernet Sauvignon, 6% Merlot, 1% Petit Verdot, 1% Malbec and 1% Cabernet Franc"
-  },
-  "132852": {
+  }, {
+    "id": "132852",
     "name": "Belle Glos Las Alturas Vineyard Pinot Noir 2013",
     "varietal": "Pinot Noir",
     "photo": "/static/images/132852.jpg",
@@ -49,8 +50,8 @@
       "WS": 93
     },
     "note": "Dense, concentrated ruby color, hinting at the dark berry fruits and rich, textural components in this wine. On the nose, aromas of raspberry, wild blackberry and a slight earthiness. The palate is supple and layered with exotic spices, a rich meatiness, ripe plum, currant and black cherry flavors. The ripe tannins are nicely balanced with acidity, and the finish is long and fulfilling."
-  },
-  "140226": {
+  }, {
+    "id": "140226",
     "name": "Ritual Casablanca Valley Pinot Noir 2014",
     "varietal": "Pinot Noir",
     "photo": "/static/images/140226.jpg",
@@ -59,8 +60,8 @@
       "WW": 92
     },
     "note": "Ritual Pinot Noir 2014 opens with fresh and generous fruity aromas of cherries and raspberries. Refreshing and juicy with a medium body. The palate is round, smooth and balanced with a silky, velvety finish."
-  },
-  "131349": {
+  }, {
+    "id": "131349",
     "name": "Two Hands Bella's Garden Shiraz 2012",
     "varietal": "Syrah/Shiraz",
     "photo": "/static/images/131349.jpg",
@@ -71,8 +72,8 @@
       "W&S": 90
     },
     "note": "#16 Wine Spectator Top 100 of 2014\nDeep dark red color. Black core, bright red meniscus. Aromas bursts out of the glass almost in a brooding, elegant manner. Juicy red and black fruits with notes of five spice, earth, black pepper and sandalwood. On the palate fresh juicy fruits erupt and roll across the palate as only a great Barossa Shiraz can. Lovely tactile nature with grippy fine grained tannins. Palate rolls on and on with subtle chocolate and spice notes. A brilliant vintage of Barossa Shiraz yet feels moody and tightly coiled. Watch it fan out after a couple of years in bottle. This will be a classic."
-  },
-  "136808": {
+  }, {
+    "id": "136808",
     "name": "Andrew Murray Tous les Jours Syrah 2013",
     "varietal": "Syrah/Shiraz",
     "photo": "/static/images/136808.jpg",
@@ -81,8 +82,8 @@
       "WE": 93
     },
     "note": "We strive to craft a quintessentially Santa Ynez Valley Syrah, where we have the ability to show both the cool and warm climate characteristics of Syrah. The 2013 vintage is remarkably dark and full-bodied, and yet it has such gentle tannins. It is truly a pleasure to drink, especially at the price. Lots of fruit and spices here... no need to wax poetic about this one as it tastes just plain yummy."
-  },
-  "123995": {
+  }, {
+    "id": "123995",
     "name": "Qupe Syrah Bien Nacido Hillside Estate Vineyard 2008",
     "varietal": "Syrah/Shiraz",
     "photo": "/static/images/123995.jpg",
@@ -94,8 +95,8 @@
       "W&S": 91
     },
     "note": "The Hillside Estate Syrah shows notes of black pepper, raspberries, cola and Provençal herbs. The flavors round out into friendly accents of sweet French oak. This is a high-quality wines that could benefit from a few years in the cellar."
-  },
-  "132325": {
+  }, {
+    "id": "132325",
     "name": "Clos du Val Merlot 2011",
     "varietal": "Merlot",
     "photo": "/static/images/132325.jpg",
@@ -104,8 +105,8 @@
       "WE": 90
     },
     "note": "Characteristic of Clos Du Val's world-class style, the 2011 Merlot continues the winery’s tradition of producing truly elegant wines of balance and complexity. Refined and plum in color, it offers complex yet vibrant aromas of black currant, dark chocolate, nutmeg and toffee. The mouth-feel is silky and evolved, with flavors of black cherry and blueberry complimented by a silky, lingering finish."
-  },
-  "128778": {
+  }, {
+    "id": "128778",
     "name": "Tilia Merlot 2013",
     "varietal": "Merlot",
     "photo": "/static/images/128778.jpg",
@@ -115,4 +116,4 @@
     },
     "note": "The nose offers aromas of juicy black cherries and black plums with hints of sweet spice and vanilla. On the palate the wine is soft and elegant with black cherry and plum flavors and fine, supple tannins."
   }
-}
+]
