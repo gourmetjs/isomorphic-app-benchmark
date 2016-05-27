@@ -15,12 +15,18 @@ module.exports = function(options) {
   app.set("views", npath.join(__dirname, "templates"));
   app.set("view engine", "ejs");
 
-  if (!options.enableCache)
+  if (!options.enableCache) {
     app.disable("etag");
+  }
+
+  var staticOptions = {
+    etag: options.enableCache,
+    lastModified: options.enableCache
+  };
 
   app.use(logger("dev"));
-  app.use("/static/scripts", express.static(npath.join(__dirname, "../_build/client"), {etag: options.enableCache}));
-  app.use("/static", express.static(npath.join(__dirname, "../static"), {etag: options.enableCache}));
+  app.use("/static/scripts", express.static(npath.join(__dirname, "../_build/client"), staticOptions));
+  app.use("/static", express.static(npath.join(__dirname, "../static"), staticOptions));
 
   app.get("/", function(req, res) {
     res.render("index");
