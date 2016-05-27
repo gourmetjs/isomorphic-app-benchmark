@@ -4,6 +4,7 @@ var npath = require("path");
 var fs = require("fs");
 var express = require("express");
 var logger = require("morgan");
+var compression = require("compression");
 var ReactDOMServer = require("react-dom/server");
 var renderRoot = require("../_build/server/renderRoot").default;
 var wines = require("./data.json");
@@ -25,8 +26,10 @@ module.exports = function(options) {
   };
 
   app.use(logger("dev"));
+  app.use(compression());
   app.use("/static/scripts", express.static(npath.join(__dirname, "../_build/client"), staticOptions));
   app.use("/static", express.static(npath.join(__dirname, "../static"), staticOptions));
+  app.use("/static/vendors", express.static(npath.join(__dirname, "../node_modules"), staticOptions));
 
   app.get("/", function(req, res) {
     res.render("index");

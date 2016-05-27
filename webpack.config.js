@@ -16,5 +16,12 @@ module.exports = {
       exclude: /(node_modules|bower_components)/,
       loader: "babel"
     }]
-  }
+  },
+  plugins: process.env.NODE_ENV === "production" ? [
+    new webpack.DefinePlugin({
+      "process.env": {
+        "NODE_ENV": JSON.stringify("production")
+      }
+    })
+  ] : []
 };
