@@ -33,7 +33,7 @@ function _onListening() {
 }
 
 var app = initApp({
-  enableCache: false,
+  enableCache: true,
   dataDelay: 200
 });
 
