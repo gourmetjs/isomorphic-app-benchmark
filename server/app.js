@@ -5,8 +5,8 @@ var fs = require("fs");
 var express = require("express");
 var logger = require("morgan");
 var ReactDOMServer = require("react-dom/server");
-var fetch = require("node-fetch");
 var renderRoot = require("../_build/server/renderRoot").default;
+var wines = require("./data.json");
 
 module.exports = function(options) {
   var app = express();
@@ -43,11 +43,10 @@ module.exports = function(options) {
   app.get("/isomorphic", function(req, res, next) {
     renderRoot({
       loadData: function() {
-        return fetch(options.apiUrl + "/data").then(function(res) {
-          return res.json();
-        }).catch(function(err) {
-          next(err);
-          throw err;
+        return new Promise(function(resolve) {
+          setTimeout(function() {
+            resolve(wines);
+          }, options.dataDelay);
         });
       },
 
@@ -62,14 +61,9 @@ module.exports = function(options) {
   });
 
   app.get("/data", function(req, res, next) {
-    fs.readFile(npath.join(__dirname, "data.json"), "utf8", function(err, data) {
-      if (err) {
-        next(err);
-      } else {
-        data = JSON.parse(data);
-        res.json(data);
-      }
-    });
+    setTimeout(function() {
+      res.json(wines);
+    }, options.dataDelay);
   });
 
   // catch 404 and forward to error handler
