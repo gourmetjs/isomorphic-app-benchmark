@@ -63,6 +63,16 @@ module.exports = function(options) {
     });
   });
 
+  app.get("/client-no-ajax", function(req, res) {
+    setTimeout(function() {
+      res.render("base", {
+        title: "Client Rendering without AJAX",
+        data: JSON.stringify(wines),
+        contentElements: ""
+      });
+    }, options.dataDelay);
+  });
+
   app.get("/data", function(req, res, next) {
     setTimeout(function() {
       res.json(wines);
