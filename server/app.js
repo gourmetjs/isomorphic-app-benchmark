@@ -16,25 +16,23 @@ module.exports = function(options) {
   app.set("views", npath.join(__dirname, "templates"));
   app.set("view engine", "ejs");
 
-  if (!options.enableCache) {
-    app.disable("etag");
-  }
-
-  var staticOptions = {
-    etag: options.enableCache,
-    lastModified: options.enableCache
-  };
-
+  // generic middleware setup
   app.use(logger("dev"));
   app.use(compression());
+
+  // static middleware setup
+  var staticOptions = options.longTermCache ? {maxage: 24 * 60 * 60 * 1000} : undefined;
   app.use("/static/scripts", express.static(npath.join(__dirname, "../_build/client"), staticOptions));
   app.use("/static", express.static(npath.join(__dirname, "../static"), staticOptions));
   app.use("/static/vendors", express.static(npath.join(__dirname, "../node_modules"), staticOptions));
 
+  // index page
   app.get("/", function(req, res) {
     res.render("index");
   });
 
+  // server: send HTML without data and content markups
+  // client: request data via API (200ms delay) -> render content markups with the data
   app.get("/client", function(req, res) {
     res.render("base", {
       title: "Client Rendering",
@@ -43,6 +41,8 @@ module.exports = function(options) {
     });
   });
 
+  // server: get data (200ms delay) -> send HTML with data and pre-rendered markups
+  // client: render content markups with the data and verify (reconsiliation)
   app.get("/isomorphic", function(req, res, next) {
     renderRoot({
       loadData: function() {
@@ -63,6 +63,8 @@ module.exports = function(options) {
     });
   });
 
+  // server: get data (200ms delay) -> send HTML with data only (no pre-rendered markups)
+  // client: render content markups with the data
   app.get("/client-no-ajax", function(req, res) {
     setTimeout(function() {
       res.render("base", {
@@ -73,6 +75,7 @@ module.exports = function(options) {
     }, options.dataDelay);
   });
 
+  // Data API for client rendering
   app.get("/data", function(req, res, next) {
     setTimeout(function() {
       res.json(wines);

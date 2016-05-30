@@ -33,7 +33,7 @@ function _onListening() {
 }
 
 var app = initApp({
-  enableCache: true,
+  longTermCache: process.env.NODE_ENV === "production",
   dataDelay: 200
 });
 
