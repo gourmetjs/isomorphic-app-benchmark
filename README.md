@@ -1,4 +1,8 @@
-# Build Node.js from source code on EC2 (t2.micro) / Amazon Linux
+## Benchmark test for measuring loading speed of isomorphic app
+
+This is a companion repo of [this article](http://example.com).
+
+## Build Node.js from source code on EC2 (t2.micro) / Amazon Linux
 
 ```
 sudo yum update
@@ -12,7 +16,7 @@ make
 sudo make install
 ```
 
-# Build this app
+## Build this app
 
 ```
 sudo yum install git
@@ -23,7 +27,7 @@ npm install
 npm run release-build
 ```
 
-# Start this app automatically on system reboot
+## Start this app automatically on system reboot
 
 Be sure to edit the content of `iso-benchmark` to configure it for your
 environment.
@@ -37,7 +41,7 @@ sudo chkconfig --add iso-benchmark
 
 `iso-benchmark` script is based on `https://github.com/chovy/node-startup`
 
-# Start the app
+## Start the app
 
 ```
 sudo service iso-benchmark start
