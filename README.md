@@ -2,6 +2,8 @@
 
 This is a companion repo of [this article](http://example.com).
 
+**NOTE**: Wine information in this app was captured from `http://www.wine.com`.
+
 ## Build Node.js from source code on EC2 (t2.micro) / Amazon Linux
 
 ```
