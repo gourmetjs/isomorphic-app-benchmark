@@ -5,7 +5,7 @@
     "start": "node server/index.js",
     "build": "babel src -d _build/server && webpack --colors",
     "watch": "nodemon watch.js",
-    "release-build": "NODE_ENV=production babel src -d _build/server && webpack --colors -p"
+    "release-build": "babel src -d _build/server && NODE_ENV=production webpack --colors -p"
   },
   "dependencies": {
     "babel-runtime": "^6.9.0",
