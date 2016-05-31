@@ -2,7 +2,7 @@
 
 This is a companion repo of [this article](http://example.com).
 
-**NOTE**: Wine information in this app was captured from `http://www.wine.com`.
+**NOTE**: Wine information in this app was captured from <http://www.wine.com>.
 
 ## Build Node.js from source code on EC2 (t2.micro) / Amazon Linux
 
@@ -41,7 +41,7 @@ sudo chmod 755 /etc/init.d/iso-benchmark
 sudo chkconfig --add iso-benchmark
 ```
 
-`iso-benchmark` script is based on `https://github.com/chovy/node-startup`
+`iso-benchmark` script is based on <https://github.com/chovy/node-startup>.
 
 ## Start the app
 
