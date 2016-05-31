@@ -1,6 +1,6 @@
+import "./polyfill";
 import React from "react";
 import ReactDOM from "react-dom";
-import "whatwg-fetch";
 import renderRoot from "../src/renderRoot";
 
 renderRoot({
