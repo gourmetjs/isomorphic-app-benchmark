@@ -1,6 +1,6 @@
 ## Benchmark test for measuring loading speed of isomorphic app
 
-This is a companion repo of [this article](http://example.com).
+This is a companion repo of [this article](http://gourmetjs.github.io/isomorphic/2016/06/13/Isomorphic-App.html).
 
 **NOTE**: Wine information in this app was captured from <http://www.wine.com>.
 
